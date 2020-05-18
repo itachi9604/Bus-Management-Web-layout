@@ -1,0 +1,55 @@
+<html>
+<head>
+  <link rel="stylesheet" href="style3.css">
+  </link>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+
+
+</head>
+<body>
+   <div class="upper_box">
+
+   <h3>Select Your Bus!</h3>
+   <br>
+   <h2><span id="src_tr"></span> <i class="fa fa-exchange" style="font-size:36px"></i><span id="destination_travel"></span></h2>
+   <h2><span id='dt_app'></span></h2>
+
+ </div>
+
+<div class="bus_buttons">
+<input type="button" name="bus1" val
+
+
+</div>
+ <div class="bus">
+   <ul>
+     <li onclick="window.location='bookseats.html'">
+       <span class="bustime">9:00am - 12:30pm<br><h2>Redbus service</h2></span>
+       <h2><span class="bus_fare">Rs. 700<br><h5>AC sleeper</h5></span></h2>
+
+
+
+     </li>
+     <li>
+       <span class="bustime">2:00am - 6:30pm<br><h2>Arundhati service</h2></span>
+       <h2><span class="bus_fare">Rs. 1200<br><h5>AC sleeper</h5></span></h2>
+   </ul>
+
+ </div>
+
+
+ <script>
+ document.getElementById('src_tr').innerHTML=localStorage.getItem('src');
+ document.getElementById('destination_travel').innerHTML=localStorage.getItem('destiny');
+ document.getElementById('dt_app').innerHTML=localStorage.getItem('date_sel');
+
+
+
+
+ </script>
+</body>
+
+
+
+
+</html>

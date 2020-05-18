@@ -1,0 +1,42 @@
+body{
+   margin:0;
+   padding: 0;
+   font-family: sans-serif;
+   background: url(bus_image_3.png) no-repeat;
+   background-size:1700px 1100px;
+}
+.butt_pay{
+  position: absolute;
+  top: 40%;
+  left:70%;
+  border: 1px solid white;
+  outline: 1px;
+  background:none;
+  width: 200px;
+  font-size: 18px;
+  color: white;
+  padding: 8px;
+
+}
+.name_bus{
+  position: absolute;
+  top: 20%;
+  left:60%;
+  border: 1px solid white;
+  outline: 1px;
+  background:none;
+  width: 400px;
+  font-size: 18px;
+  color: white;
+  padding: 8px;
+
+}
+
+
+.butt_pay:hover{
+
+
+  background-color: white;
+  color: blue;
+  font-weight: bold;
+}

@@ -1,0 +1,68 @@
+<html>
+<head>
+  <link rel="stylesheet" href="style5.css">
+</link>
+
+
+</head>
+
+
+<body>
+  <form>
+<label class="pay_label">Payment</label>
+
+
+    <input type="image" src="rupay.jpg" alt="Submit" width=300px height=100px>
+      <input type="image" src="visa.png" alt="Submit" width=300px height=100px>
+
+
+
+      <div class="pay_box">
+        <div class="holder_box">
+          <input type="text" id="holder_name" name="" value="" placeholder="Card Holder's Name" />
+        </div>
+        <div class="card_no_box">
+          <input type="text" id="card" name="" value="" maxlength="16" placeholder="16-Digit card number"  />
+        </div>
+        <div class="dt_exp">
+          <input type="text" id="date_exp" name="" value="" placeholder="Expiry Date(MM/YY)" pattern="[0-9]{2}\/[0-9]{2}" maxlength="5" />
+        </div>
+
+      </div>
+
+   <input class="button_amt" type="button" name="amt_button" value="Confirm Payment" onclick="notify()"/>
+</form>
+
+<script>
+    function notify(){
+
+      card_num=document.getElementById('card').value;
+      exp_date=document.getElementById('date_exp').value;
+      if(card_num.length<16 || card_num.length>16){
+
+
+        alert('card length invalid')
+      }
+
+
+
+else{
+
+      document.getElementById('holder_name').value="";
+      document.getElementById('card').value="";
+      document.getElementById('date_exp').value="";
+      alert('Ticket Booked  !!')
+
+}
+
+
+    }
+
+
+</script>
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,43 @@
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</link>
+<script>
+      function login(){
+        var uname=document.getElementById('user_name').value;
+        var pass=document.getElementById('pswd').value;
+        if(uname=='smz007' && pass=='12345'){
+          window.location='after_login.html';
+        localStorage.setItem('textvalue',uname);
+
+        };
+
+
+      }
+</script>
+
+</head>
+<body>
+  <div class="wel_text">
+    <h1>Hey Traveller,</h1>
+    <h1>Let's Login first.</h1>
+  </div>
+  <div class="login_box">
+    <h2>LOGIN</h2>
+    <div class="text_box">
+      <input type="text" id="user_name" name="" value="" placeholder="Username"/>
+    </div>
+
+    <div class="pwd">
+      <input type="password" id="pswd" name="" placeholder="Password" value="">
+    </div>
+
+     <input class="button" type="button" name="log_button" value="Sign In" onclick="return(login())"/>
+      <input class="button2" type="button" name="signup" value="Sign Up"/>
+
+
+  </div>
+
+
+
+</html>
